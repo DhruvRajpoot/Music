@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Playlist = () => {
+const Playlists = () => {
   return (
     <div>
-      
+      playlists
     </div>
   )
 }
 
-export default Playlist
+export default Playlists;
