@@ -1,22 +1,13 @@
-import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
-import DefinedRoutes from "./Routes/Routes";
-import { AppContainer } from "./App.style.ts";
+import {RouterProvider } from "react-router-dom";
 import GlobalStyles from "./Global.style.ts";
-import Sidebar from "./Components/SideBar/Sidebar.tsx";
+import routes from "./Routes/Routes";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <GlobalStyles />
-      <AppContainer>
-      <Sidebar />
-        <Routes>
-          {DefinedRoutes.map((route, index) => (
-            <Route key={index} path={route.path} element={route.element} />
-          ))}
-        </Routes>
-      </AppContainer>
-    </Router>
+      <RouterProvider router={routes} />
+    </>
   );
 };
 export default App;

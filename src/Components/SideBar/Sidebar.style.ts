@@ -11,6 +11,14 @@ export const SidebarContainer = styled.div`
   background-color: #574fd8;
   gap: 3rem;
   position: relative;
+
+  @media (max-width: 800px) {
+    width: 80px;
+  }
+
+  @media (max-width: 500px) {
+    width: 60px;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -21,6 +29,11 @@ export const LogoContainer = styled.div`
   position: absolute;
   top: 1rem;
   left: 1.5rem;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+    left: 0;
+  }
 `;
 
 export const Logo = styled.img`
@@ -30,6 +43,10 @@ export const Logo = styled.img`
 export const Title = styled.p`
   color: white;
   font-size: 1.5rem;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const MenuContainer = styled.div`
@@ -39,7 +56,7 @@ export const MenuContainer = styled.div`
 `;
 
 export const Icon = styled.div`
-  font-size: 1.3rem;
+  font-size: calc(2rem - .8vw);
 `;
 
 export const CustomLink = styled(NavLink)`
@@ -56,5 +73,11 @@ export const CustomLink = styled(NavLink)`
 
   &.active {
     opacity: 1;
+  }
+`;
+
+export const LinkTitle= styled.p`
+  @media (max-width: 800px) {
+    display: none;
   }
 `;

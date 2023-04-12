@@ -1,35 +1,48 @@
 import Home from "../pages/Home/Home";
-import Playlist from "../pages/Playlists/Playlists";
-import Favorite from "../pages/Favorites/Favorites";
+import Playlists from "../pages/Playlists/Playlists";
+import Favorites from "../pages/Favorites/Favorites";
 import Player from "../pages/Player/Player";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import Search from "../pages/Search/Search";
+import Login from "../pages/Login/Login";
+import { createBrowserRouter } from "react-router-dom";
+import Main from "../Layout/Main";
 
-const DefinedRoutes = [
-    {
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+    children: [
+      {
         path: "/",
-        element: <Home />
-    },
-    {
-        path: "/playlist",
-        element: <Playlist />
-    },
-    {
-        path: "/favorite",
-        element: <Favorite />
-    },
-    {
+        element: <Home />,
+      },
+      {
+        path: "/playlists",
+        element: <Playlists />,
+      },
+      {
+        path: "/favorites",
+        element: <Favorites />,
+      },
+      {
         path: "/player",
-        element: <Player />
-    },
-    {
+        element: <Player />,
+      },
+      {
         path: "/search",
-        element:<Search/>
-    },
-    {
-        path: "*",
-        element:<PageNotFound/>
-    }
-]
+        element: <Search />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "*",
+    element: <PageNotFound />,
+  },
+]);
 
-export default DefinedRoutes;
+export default routes;

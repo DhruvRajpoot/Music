@@ -12,6 +12,7 @@ const Home = () => {
           <BannerSubHeading>All day and all night</BannerSubHeading>
         </BannerContent>
       </TopBanner>
+      
     </HomeContainer>
   )
 }

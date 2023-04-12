@@ -2,6 +2,7 @@ import React from "react";
 import {
   CustomLink,
   Icon,
+  LinkTitle,
   Logo,
   LogoContainer,
   MenuContainer,
@@ -19,10 +20,10 @@ const Sidebar = () => {
         <Title>Music</Title>
       </LogoContainer>
       <MenuContainer>
-        <CustomLink to="/"><Icon><MdHomeFilled /></Icon>Home</CustomLink>
-        <CustomLink to="/search"><Icon><MdSearch /></Icon>Search</CustomLink>
-        <CustomLink to="/favorites"><Icon><MdFavorite /></Icon>Favorites</CustomLink>
-        <CustomLink to="/playlists"><Icon><MdAddBox /></Icon>Playlists</CustomLink>
+        <CustomLink to="/"><Icon><MdHomeFilled /></Icon><LinkTitle>Home</LinkTitle></CustomLink>
+        <CustomLink to="/search"><Icon><MdSearch /></Icon><LinkTitle>Search</LinkTitle></CustomLink>
+        <CustomLink to="/favorites"><Icon><MdFavorite /></Icon><LinkTitle>Favorites</LinkTitle></CustomLink>
+        <CustomLink to="/playlists"><Icon><MdAddBox /></Icon><LinkTitle>Playlists</LinkTitle></CustomLink>
       </MenuContainer>
     </SidebarContainer>
   );
