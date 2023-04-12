@@ -7,6 +7,7 @@ import {
   TopBanner,
 } from "./Home.style";
 import banner from "../../assets/images/banner.png";
+import MusicRow from "../../Components/MusicRow/MusicRow";
 
 const Home = () => {
   return (
@@ -18,6 +19,8 @@ const Home = () => {
           <BannerSubHeading>All day and all night</BannerSubHeading>
         </BannerContent>
       </TopBanner>
+
+      <MusicRow />
     </HomeContainer>
   );
 };

@@ -10,7 +10,8 @@ export const SidebarContainer = styled.div`
   height: 100vh;
   background-color: #574fd8;
   gap: 3rem;
-  position: relative;
+  position: sticky;
+  top: 0;
 
   @media (max-width: 800px) {
     width: 80px;
