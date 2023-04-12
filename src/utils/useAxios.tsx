@@ -2,7 +2,7 @@ import axios from "axios";
 
 const useAxios = () => {
   const instances = axios.create({
-    baseURL: "",
+    baseURL: "https://api.spotify.com/v1",
     headers: {
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
