@@ -2,9 +2,13 @@ import { useState, useEffect } from "react";
 import { MainContainer } from "./Main.style";
 import Sidebar from "../Components/SideBar/Sidebar";
 import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Main = () => {
   const [token, setToken] = useState(localStorage.getItem("token") ? localStorage.getItem("token") : null);
+  const loading=useSelector((state:any)=>state.loading);  
+
+  console.log(loading);
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -18,6 +22,7 @@ const Main = () => {
       window.location.href = "/login"
     }
   }, [token]);
+
 
   return (
     <MainContainer>

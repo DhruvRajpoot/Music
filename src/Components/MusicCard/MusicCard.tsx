@@ -6,7 +6,7 @@ const MusicCard = () => {
   return (
     <MusicCardContainer href="#">
       <Image src={logo} alt="Music Image" />
-      <Title>Senorita </Title>
+      <Title>Music Title</Title>
     </MusicCardContainer>
   );
 };

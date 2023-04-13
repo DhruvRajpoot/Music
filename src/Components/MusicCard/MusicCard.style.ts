@@ -11,8 +11,8 @@ export const MusicCardContainer = styled.a`
 `;
 
 export const Image = styled.img`
-  width: calc(4rem + 2.5vw);
-  height: calc(4rem + 2.5vw);
+  width: 90%;
+  height: 90%;
   border-radius: 10px;
   object-fit: cover;
   border: 1px solid black;

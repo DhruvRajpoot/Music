@@ -11,6 +11,8 @@ const useAxios = () => {
   instances.interceptors.request.use(async (request) => {
     return request;
   });
+
+  return instances;
 };
 
 export default useAxios;

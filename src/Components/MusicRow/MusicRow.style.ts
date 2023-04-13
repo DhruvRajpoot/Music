@@ -17,8 +17,8 @@ export const Title = styled.h5`
 `;
 
 export const MusicRowList = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: calc(1rem + .5vw);
-  padding-bottom:1rem ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(5rem + 3vw), 1fr));
+  grid-gap: 1rem;
+  grid-row-gap: 2rem;
 `;  
