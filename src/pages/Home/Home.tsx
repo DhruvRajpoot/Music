@@ -30,11 +30,6 @@ const Home = () => {
     (state: any) => state.playlist.RecentPlaylist
   );
 
-  const updateUserFunc = async () => {
-    const res = await api.get(`/me`);
-    dispatch(getUserDetails(res.data));
-  };
-
   const getFeaturedPlaylist = async () => {
     const res = await api.get(`/browse/featured-playlists`);
     // dispatch(getFeaturedPlaylist(res.data));
@@ -46,7 +41,6 @@ const Home = () => {
   };
 
   useEffect(() => {
-    updateUserFunc();
     getFeaturedPlaylist();
     getRecentPlaylist();
   }, []);

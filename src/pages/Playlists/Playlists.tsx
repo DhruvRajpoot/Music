@@ -12,9 +12,9 @@ const Playlists = () => {
   const [loading, setLoading] = useState(false);
   const api = useAxios();
   const dispatch = useDispatch();
-  const user=useSelector((state:any)=>state.user);
-  // console.log(user)
   const userPlaylist = useSelector((state: any) => state.playlist.userPlaylist);
+  const user=useSelector((state:any)=>state.user);
+  const username=(Object.keys(user.user).length)!==0?user.user.display_name[0].toUpperCase()+user.user.display_name.slice(1).toLowerCase():null;
 
   const UserPlaylistFunc = async () => {
     setLoading(true);
@@ -28,17 +28,9 @@ const Playlists = () => {
   }, []);
 
   return (
-    // <PlaylistContainer>
-      
-    //   <PlaylistRowList>
-    //     {(userPlaylist.length!==0?userPlaylist.items:[]).map((item: any, index: number) => {
-    //       return <PlaylistCard key={index} data={item} />;
-    //     })}
-    //   </PlaylistRowList>
-    // </PlaylistContainer>
     <>
     {
-      loading ? <Loader/> : <PlaylistRow title="Your Playlists" data={userPlaylist} />
+      loading ? <Loader/> : <PlaylistRow title={`${username?username:'Your'}'s Playlists`} data={userPlaylist} />
     }
     </>
   );

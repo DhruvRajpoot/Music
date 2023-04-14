@@ -2,9 +2,14 @@ import { useState, useEffect } from "react";
 import { MainContainer, MainContent } from "./Main.style";
 import Sidebar from "../Components/SideBar/Sidebar";
 import { Outlet } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import useAxios from "../utils/useAxios";
+import { getUserDetails } from "../Redux/reducers/userReducer";
 
 const Main = () => {
+  const api = useAxios();
+  const dispatch=useDispatch();
+
   const [token, setToken] = useState(
     localStorage.getItem("token") ? localStorage.getItem("token") : null
   );
@@ -21,12 +26,21 @@ const Main = () => {
     }
   }, [token]);
 
+  const updateUserFunc = async () => {
+    const res = await api.get(`/me`);
+    dispatch(getUserDetails(res.data));
+  };
+
+  useEffect(() => {
+    updateUserFunc();
+  }, []);
+
   return (
     <MainContainer>
       <Sidebar />
       <MainContent>
         <Outlet />
-      </MainContent>  
+      </MainContent>
     </MainContainer>
   );
 };
