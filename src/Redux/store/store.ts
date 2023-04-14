@@ -8,5 +8,8 @@ export default configureStore({
     user: userReducer,
     playlist: playlistReducer,
     favorite: favoriteReducer,
-  },
-});
+  }
+  // ,
+  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+},
+);
