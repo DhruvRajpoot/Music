@@ -1,6 +1,6 @@
 import Home from "../pages/Home/Home";
 import Playlists from "../pages/Playlists/Playlists";
-import Favorites from "../pages/Favorites/Favorites";
+import Favourites from "../pages/Favourites/Favourites";
 import Player from "../pages/Player/Player";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import Search from "../pages/Search/Search";
@@ -22,8 +22,8 @@ const routes = createBrowserRouter([
         element: <Playlists />,
       },
       {
-        path: "/favorites",
-        element: <Favorites />,
+        path: "/favourites",
+        element: <Favourites />,
       },
       {
         path: "/player",

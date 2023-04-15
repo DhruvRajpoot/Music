@@ -17,13 +17,9 @@ const LoaderContainer=styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: calc(100vw - 220px);
+    width: calc(100vw - 240px);
 
-    @media (max-width:800px){
-      width: calc(100vw - 80px);
-    }
-
-    @media (max-width:500px){
-      width: calc(100vw - 60px);
+    @media (max-width:756px){
+        width: 100vw;
     }
 `

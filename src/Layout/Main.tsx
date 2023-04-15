@@ -27,8 +27,16 @@ const Main = () => {
   }, [token]);
 
   const updateUserFunc = async () => {
+    try{
     const res = await api.get(`/me`);
     dispatch(getUserDetails(res.data));
+    }
+    catch(err:any){
+      if(err.message==="Request failed with status code 401"){
+        localStorage.removeItem("token");
+        window.location.href="/login";
+      }
+    }
   };
 
   useEffect(() => {

@@ -11,7 +11,7 @@ export const PlaylistRowContainer = styled.div`
 export const Title = styled.h5`
   display: flex;
   letter-spacing: 0.5px;
-  font-size: calc(0.9rem + 0.4vw);
+  font-size: 1.3rem;
   text-underline-offset: 0.5rem;
 `;
 

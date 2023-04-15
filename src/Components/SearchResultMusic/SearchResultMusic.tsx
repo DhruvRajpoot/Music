@@ -1,28 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import {
   Column,
   Image,
-  MusicContainer,
   Artist,
   Title,
   TitleWrapper,
   WebOnlyColumn,
   Icon,
-} from "./MusicRow.style";
-import logo from "../../assets/images/logo.png";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+} from "../MusicRow/MusicRow.style";
+import { MusicWrapper } from "./SearchResultMusic.style";
 import useAxios from "../../utils/useAxios";
 
-const MusicRow = (props) => {
-  const date = new Date(`${props.data.added_at}`);
-  const month = date.toLocaleString("default", { month: "short" });
-  const data = props.data.track;
+const SearchResultMusic = (props:any) => {
+  const data = props.data;
   const artist = data.artists.map((artist) => artist.name).join(", ");
   const durationMin = Math.floor(data.duration_ms / 60000);
   const durationSec = Math.floor((data.duration_ms % 60000) / 1000);
   const id = data.id;
   const api = useAxios();
-  const [liked, setLiked] = useState(true);
+  const [liked, setLiked] = useState(false);
 
   const checkLiked = async () => {
     try {
@@ -32,10 +29,6 @@ const MusicRow = (props) => {
       console.log(err);
     }
   };
-
-  useEffect(() => {
-    checkLiked();
-  }, [liked]);
 
   const handleLike = async () => {
     if (liked) {
@@ -54,9 +47,12 @@ const MusicRow = (props) => {
     setLiked(!liked);
   };
 
+  useEffect(() => {
+    checkLiked();
+  }, [liked]);
+
   return (
-    <MusicContainer>
-      <Column>{props.index + 1}</Column>
+    <MusicWrapper>
       <Column>
         <Image src={data.album.images[0].url} alt="Music Image" />
         <TitleWrapper>
@@ -65,9 +61,6 @@ const MusicRow = (props) => {
         </TitleWrapper>
       </Column>
       <WebOnlyColumn>{data.album.name}</WebOnlyColumn>
-      <WebOnlyColumn>
-        {month} {date.getDate()}, {date.getFullYear()}
-      </WebOnlyColumn>
       <Column>
         <Icon onClick={handleLike}>
           {liked ? <AiFillHeart /> : <AiOutlineHeart />}
@@ -76,8 +69,8 @@ const MusicRow = (props) => {
       <WebOnlyColumn>
         0{durationMin}: {durationSec > 9 ? durationSec : `0${durationSec}`}
       </WebOnlyColumn>
-    </MusicContainer>
+    </MusicWrapper>
   );
 };
 
-export default MusicRow;
+export default SearchResultMusic;

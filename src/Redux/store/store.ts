@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "../reducers/userReducer";
 import playlistReducer from "../reducers/playlistReducer";
-import favoriteReducer from "../reducers/favoriteReducer";
+import favouriteReducer from "../reducers/favouriteReducer";
 
 export default configureStore({
   reducer: {
     user: userReducer,
     playlist: playlistReducer,
-    favorite: favoriteReducer,
+    favourite: favouriteReducer,
   }
   // ,
   // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),

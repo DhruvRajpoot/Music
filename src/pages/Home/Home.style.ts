@@ -7,7 +7,7 @@ export const HomeContainer = styled.div`
 
 export const TopBanner = styled.div`
   width: 100%;
-  height: calc(6rem + 7vw);
+  height: calc(7rem + 6vw);
   background-color: rgb(251 178 163);
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ export const UserName = styled.h4`
 `;
 
 export const BannerImage = styled.img`
-  height: calc(5rem + 7vw);
+  height: calc(7rem + 5vw);
 `;
 
 export const BannerContent = styled.div`

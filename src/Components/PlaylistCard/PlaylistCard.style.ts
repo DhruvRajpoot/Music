@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const HoverElement = styled.div`
   position: absolute;
-  bottom: 0;
-  padding-bottom: 0.5rem;
+  bottom: -.2rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -15,21 +14,33 @@ export const HoverElement = styled.div`
 `;
 
 export const HoverElementIcon = styled.div`
-  width: calc(2rem + .5vw);
-  height: calc(2rem + .5vw);
+  width: calc(2rem + 0.5vw);
+  height: calc(2rem + 0.5vw);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 255, 0, 0.5);
   border-radius: 50%;
-  font-size: calc(1.3rem + .3vw);
-  margin-bottom: .5vw;
+  font-size: calc(1.3rem + 0.4vw);
+  margin-bottom: 0.5vw;
+  color: black;
+  transform: translateY(0);
+  filter: drop-shadow(0 3px 2px rgba(255, 255, 255, 0.5));
+
+  @keyframes lift {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-1rem);
+    }
+  }
 `;
 
 export const PlaylistCardContainer = styled.a`
   display: flex;
   flex-direction: column;
-  gap: calc(0.5rem + .3vw);
+  gap: calc(0.5rem + 0.3vw);
   cursor: pointer;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
@@ -52,6 +63,8 @@ export const PlaylistCardContainer = styled.a`
 
   &:hover ${HoverElement} {
     opacity: 1;
+    animation: lift 0.3s ease-in-out 1;
+    animation-fill-mode: forwards;
   }
 `;
 
@@ -71,7 +84,7 @@ export const Image = styled.img`
 
 export const Title = styled.p`
   font-weight: 600;
-  font-size: calc(0.8rem + .2vw);
+  font-size: calc(0.8rem + 0.2vw);
 `;
 
 export const Number = styled.p`

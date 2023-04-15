@@ -1,7 +1,7 @@
 const LoginFunction = () => {
-  const ClientId = "2f4325e7f6bd45d28ef2b94d88000968";
+  const ClientId = `${process.env.REACT_APP_SPOTIFY_CLIENT_ID}`;
   const RedirectUrl = 'http://127.0.0.1:5173/'
-//   const RedirectUrl = "http://192.168.29.220:5173/";
+  // const RedirectUrl = "http://192.168.29.220:5173/";
   const AuthUrl = "https://accounts.spotify.com/authorize";
   const AuthScopes = [
     "user-read-private",

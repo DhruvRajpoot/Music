@@ -13,8 +13,8 @@ const Playlists = () => {
   const api = useAxios();
   const dispatch = useDispatch();
   const userPlaylist = useSelector((state: any) => state.playlist.userPlaylist);
-  const user=useSelector((state:any)=>state.user);
-  const username=(Object.keys(user.user).length)!==0?user.user.display_name[0].toUpperCase()+user.user.display_name.slice(1).toLowerCase():null;
+  const user=useSelector((state:any)=>state.user.user);
+  const username=(Object.keys(user).length)!==0?user.display_name[0].toUpperCase()+user.display_name.slice(1).toLowerCase():null;
 
   const UserPlaylistFunc = async () => {
     setLoading(true);

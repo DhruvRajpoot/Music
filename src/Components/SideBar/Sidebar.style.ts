@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
@@ -6,30 +6,38 @@ export const SidebarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 220px;
+  width: 240px;
   height: 100vh;
-  background-color: #574fd8;
+  background: rgb(5, 1, 68);
+  background: linear-gradient(
+    180deg,
+    rgba(5, 1, 68, 1) 100%,
+    rgba(45, 45, 45, 0.6251750700280112) 100%
+  );
   gap: 3rem;
+  z-index: 99;
   position: sticky;
-  bottom: 0;
+  top: 0;
 
   @media (max-width: 756px) {
     position: fixed;
+    bottom: 0;
+    top: calc(100vh - 4rem);
     width: calc(2.5rem + 1vw);
     height: 4rem;
     width: 100vw;
     flex-direction: row;
-    background: rgb(87, 79, 216);
+    background: rgb(6, 2, 67);
     background: linear-gradient(
       180deg,
-      rgba(87, 79, 216, 0.44030112044817926) 0%,
-      rgba(87, 79, 216, 0.7512254901960784) 60%,
-      rgba(87, 79, 216, 0.8800770308123249) 98%
+      rgba(6, 2, 67, 0.6811974789915967) 0%,
+      rgba(6, 2, 67, 0.7792366946778712) 17%,
+      rgba(5, 1, 68, 1) 100%
     );
   }
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
   width: 100%;
@@ -37,6 +45,7 @@ export const LogoContainer = styled.div`
   position: absolute;
   top: 1rem;
   left: 1.5rem;
+  text-decoration: none;
 
   @media (max-width: 756px) {
     display: none;
