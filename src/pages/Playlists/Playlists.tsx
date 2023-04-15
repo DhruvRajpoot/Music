@@ -18,8 +18,13 @@ const Playlists = () => {
 
   const UserPlaylistFunc = async () => {
     setLoading(true);
-    const res = await api.get(`/me/playlists`);
-    dispatch(getUserPlaylist(res.data));
+    try{
+      const res = await api.get(`/me/playlists`);
+      dispatch(getUserPlaylist(res.data));
+    }
+    catch(err:any){
+      console.log(err.message)
+    };
     setLoading(false);
   };
 

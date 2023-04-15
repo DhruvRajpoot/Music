@@ -11,10 +11,21 @@ export const SidebarContainer = styled.div`
   background-color: #574fd8;
   gap: 3rem;
   position: sticky;
-  top: 0;
+  bottom: 0;
 
   @media (max-width: 756px) {
+    position: fixed;
     width: calc(2.5rem + 1vw);
+    height: 4rem;
+    width: 100vw;
+    flex-direction: row;
+    background: rgb(87, 79, 216);
+    background: linear-gradient(
+      180deg,
+      rgba(87, 79, 216, 0.44030112044817926) 0%,
+      rgba(87, 79, 216, 0.7512254901960784) 60%,
+      rgba(87, 79, 216, 0.8800770308123249) 98%
+    );
   }
 `;
 
@@ -28,13 +39,12 @@ export const LogoContainer = styled.div`
   left: 1.5rem;
 
   @media (max-width: 756px) {
-    justify-content: center;
-    left: 0;
+    display: none;
   }
 `;
 
 export const Logo = styled.img`
-  height: calc(2rem + .5vw);
+  height: calc(2rem + 0.5vw);
 `;
 
 export const Title = styled.p`
@@ -50,10 +60,16 @@ export const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+
+  @media (max-width: 756px) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+  }
 `;
 
 export const Icon = styled.div`
-  font-size: 1.5rem;
+  font-size: calc(2rem - 0.7vw);
 `;
 
 export const CustomLink = styled(NavLink)`
@@ -73,7 +89,7 @@ export const CustomLink = styled(NavLink)`
   }
 `;
 
-export const LinkTitle= styled.p`
+export const LinkTitle = styled.p`
   @media (max-width: 756px) {
     display: none;
   }

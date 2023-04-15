@@ -15,25 +15,27 @@ export const HoverElement = styled.div`
 `;
 
 export const HoverElementIcon = styled.div`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: calc(2rem + .5vw);
+  height: calc(2rem + .5vw);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 255, 0, 0.5);
   border-radius: 50%;
+  font-size: calc(1.3rem + .3vw);
+  margin-bottom: .5vw;
 `;
 
 export const PlaylistCardContainer = styled.a`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: calc(0.5rem + .3vw);
   cursor: pointer;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
-  border-radius: calc(0.7rem + 0.5vw);
+  border-radius: calc(0.7rem + 0.1vw);
   background-color: rgba(0, 0, 0, 0.8);
-  padding: calc(0.6rem + 0.2vw) calc(0.7rem + 0.3vw);
+  padding: calc(0.6rem + 0.3vw) calc(0.7rem + 0.3vw);
   position: relative;
   cursor: pointer;
   transition: background 0.25s linear;
@@ -64,7 +66,7 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
 `;
 
 export const Title = styled.p`
