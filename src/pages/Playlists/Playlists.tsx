@@ -2,11 +2,12 @@ import React, { useEffect,useState } from "react";
 import useAxios from "../../utils/useAxios";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserPlaylist } from "../../Redux/reducers/playlistReducer";
-import { PlaylistContainer } from "./Playlists.style";
+import { AddMoreButton, PlaylistContainer } from "./Playlists.style";
 import { PlaylistRowList } from "../../Components/PlaylistRow/PlaylistRow.style";
 import PlaylistCard from "../../Components/PlaylistCard/PlaylistCard";
 import PlaylistRow from "../../Components/PlaylistRow/PlaylistRow";
 import Loader from "../../Components/Loader/Loader";
+import { MdPlaylistAdd } from "react-icons/md";
 
 const Playlists = () => {
   const [loading, setLoading] = useState(false);
@@ -35,7 +36,11 @@ const Playlists = () => {
   return (
     <>
     {
-      loading ? <Loader/> : <PlaylistRow title={`${username?username:'Your'}'s Playlists`} data={userPlaylist} />
+      loading ? <Loader/> : 
+      <PlaylistContainer>
+      <PlaylistRow title={`${username?username:'Your'}'s Playlists`} data={userPlaylist} />
+      <AddMoreButton title="create playlist"><MdPlaylistAdd/></AddMoreButton>
+      </PlaylistContainer>
     }
     </>
   );

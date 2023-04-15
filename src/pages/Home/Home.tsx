@@ -22,7 +22,8 @@ import PlaylistRow from "../../Components/PlaylistRow/PlaylistRow";
 const Home = () => {
   const api = useAxios();
   const dispatch = useDispatch();
-  const user = useSelector((state: any) => state.user);
+  const user = useSelector((state: any) => state.user.user);
+  const username=(Object.keys(user).length)!==0?user.display_name[0].toUpperCase()+user.display_name.slice(1).toLowerCase():null;
   const featuredPlaylist = useSelector(
     (state: any) => state.playlist.featuredPlaylist
   );
@@ -43,14 +44,16 @@ const Home = () => {
   useEffect(() => {
     getFeaturedPlaylist();
     getRecentPlaylist();
+
+    console.log(user)
   }, []);
 
   return (
     <HomeContainer>
       <TopBanner>
         <UserContainer>
-          <UserImage src={userDefaultImage} alt="user" />
-          <UserName>Dhruv</UserName>
+          <UserImage src={Object.keys(user).length!==0?user.images[0].url:userDefaultImage} alt="user" />
+          <UserName>{username}</UserName>
         </UserContainer>
         <BannerImage src={banner} alt="banner" />
         <BannerContent>
