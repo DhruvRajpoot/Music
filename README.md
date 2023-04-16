@@ -6,7 +6,7 @@
 > Bug reports in Issues section will really helpful and it would be more great if you fix it and lend a helping hand by opening a pull request.
 
 <div> <h1 align="center">  Preview </h1>
-  <b>Preview</b> this site on https://
+  <b>Preview</b> this site on https://music-iiitbhopal.netlify.app/
   
   Shipped and deployed using [Netlify](https://www.netlify.com/)
 </div>
