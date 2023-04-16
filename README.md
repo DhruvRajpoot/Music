@@ -19,18 +19,18 @@
 <p><img src="https://user-images.githubusercontent.com/96336670/232313712-fb1ab77c-aa4d-4483-8be0-1cbc33f73ff1.png"/></p>
 
   <h3 align="center">Favourite Page</h3>
-   ![Screenshot (290)](https://user-images.githubusercontent.com/96336670/232313392-41e98899-adb1-4975-b275-5103431771a1.png)
+   <p><img src="https://user-images.githubusercontent.com/96336670/232313392-41e98899-adb1-4975-b275-5103431771a1.png"/></p>
 
     
   <h3 align="center">Playlist View</h3>
-![Screenshot (291)](https://user-images.githubusercontent.com/96336670/232313387-2f7de3ec-6b78-47ff-a7e5-ec204774e37c.png)
+<p><img src="https://user-images.githubusercontent.com/96336670/232313387-2f7de3ec-6b78-47ff-a7e5-ec204774e37c.png"/></p>
 
 
   <h3 align="center">Playlist Music List</h3>
-  ![Screenshot (292)](https://user-images.githubusercontent.com/96336670/232313379-8adb99fe-1947-4137-98f6-48270cbea373.png)
+ <p><img src="https://user-images.githubusercontent.com/96336670/232313379-8adb99fe-1947-4137-98f6-48270cbea373.png"/></p>
 
   <h3 align="center">Create Playlist</h3>
-  ![Screenshot (293)](https://user-images.githubusercontent.com/96336670/232313372-d6c13cef-3ef7-474d-8fee-03b320017bee.png)
+<p><img src="https://user-images.githubusercontent.com/96336670/232313372-d6c13cef-3ef7-474d-8fee-03b320017bee.png"/></p>
 
   </div>
   
