@@ -24,6 +24,9 @@
 <div class="img" align="center" >
   <h1 align="center">📺 Snapshots 📺</h1>
   
+  <h3 align="center">Home Page</h3>
+  <p><img src="https://user-images.githubusercontent.com/96336670/232331727-06751df5-7605-479b-b128-cf746e9f36f0.png"/></p>
+  
   <h3 align="center">Search Page</h3>
 <p><img src="https://user-images.githubusercontent.com/96336670/232313712-fb1ab77c-aa4d-4483-8be0-1cbc33f73ff1.png"/></p>
 
