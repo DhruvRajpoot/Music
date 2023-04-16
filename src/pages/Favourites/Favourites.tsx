@@ -2,7 +2,7 @@ import React, { useEffect ,useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useAxios from "../../utils/useAxios";
 import { getfavourite } from "../../Redux/reducers/favouriteReducer";
-import MusicList from "../MusicList/MusicList";
+import FavouriteList from "./FavouriteList/FavouriteList";
 import Loader from "../../Components/Loader/Loader";
 
 const Favourite = () => {
@@ -29,7 +29,7 @@ const Favourite = () => {
 
   return (
     <div>
-      {loading?<Loader/>:<MusicList data={favourites}/>}
+      {loading?<Loader/>:<FavouriteList data={favourites} title={'Liked Songs'}/>}
     </div>
   );
 };

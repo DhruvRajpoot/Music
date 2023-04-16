@@ -5,6 +5,8 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 const PlaylistCard = (props) => {
   const data=props.data;
+  console.log(data)
+
   return (
     <PlaylistCardContainer href="#">
       <ImageContainer><Image src={data.images.length!==0?data.images[0].url:defaultImg} alt="Music Image" /></ImageContainer>
