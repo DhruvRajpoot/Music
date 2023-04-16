@@ -1,5 +1,6 @@
 <h1 align="center" > "MUSIC" </h1>
 <h2 align="center"> A spotify clone which allows user to search for their favourite music, create playlists, add music to their favourite section. </h2>
+<h3 align="center">It is fully responsive so can be view in mobile, tablet and laptop.</h3>
 
 > ⚠️ This only **one** of very **__initial release__** and hence there may be bugs, lags, errors.
 > Bug reports in Issues section will really helpful and it would be more great if you fix it and lend a helping hand by opening a pull request.
@@ -13,7 +14,26 @@
 
 <div class="img" align="center" >
   <h1 align="center">📺 Snapshots 📺</h1>
+  
+  <h3 align="center">Search Page</h3>
+![Screenshot (289)](https://user-images.githubusercontent.com/96336670/232313399-cd09bbf5-281c-4729-aa95-0a6f5f1ded5f.png)
+
+  <h3 align="center">Favourite Page</h3>
+   ![Screenshot (290)](https://user-images.githubusercontent.com/96336670/232313392-41e98899-adb1-4975-b275-5103431771a1.png)
+
+    
+  <h3 align="center">Playlist View</h3>
+![Screenshot (291)](https://user-images.githubusercontent.com/96336670/232313387-2f7de3ec-6b78-47ff-a7e5-ec204774e37c.png)
+
+
+  <h3 align="center">Playlist Music List</h3>
+  ![Screenshot (292)](https://user-images.githubusercontent.com/96336670/232313379-8adb99fe-1947-4137-98f6-48270cbea373.png)
+
+  <h3 align="center">Create Playlist</h3>
+  ![Screenshot (293)](https://user-images.githubusercontent.com/96336670/232313372-d6c13cef-3ef7-474d-8fee-03b320017bee.png)
+
   </div>
+  
 <div class="tech_stack"> <h1 align="center"> 💻 Our Tech Stack 💻</h1>
   <div class="label" align="center" >
   </div>
