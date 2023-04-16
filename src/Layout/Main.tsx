@@ -32,10 +32,11 @@ const Main = () => {
     dispatch(getUserDetails(res.data));
     }
     catch(err:any){
-      if(err.message==="Request failed with status code 401"){
-        localStorage.removeItem("token");
-        window.location.href="/login";
-      }
+      console.log(err)
+      // if(err.message==="Request failed with status code 401"){
+      //   localStorage.removeItem("token");
+      //   window.location.href="/login";
+      // }
     }
   };
 
