@@ -1,6 +1,6 @@
 const LoginFunction = () => {
   const ClientId = "2f4325e7f6bd45d28ef2b94d88000968";
-  const RedirectUrl = 'http://127.0.0.1:5173/'
+  const RedirectUrl = 'https://music-iiitbhopal.netlify.app/'
   const AuthUrl = "https://accounts.spotify.com/authorize";
   const AuthScopes = [
     "user-read-private",
