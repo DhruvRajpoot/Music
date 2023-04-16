@@ -16,7 +16,7 @@
   <h1 align="center">📺 Snapshots 📺</h1>
   
   <h3 align="center">Search Page</h3>
-<p><img src="https://user-images.githubusercontent.com/96336670/232313712-fb1ab77c-aa4d-4483-8be0-1cbc33f73ff1.png)"/></p>
+<p><img src="https://user-images.githubusercontent.com/96336670/232313712-fb1ab77c-aa4d-4483-8be0-1cbc33f73ff1.png"/></p>
 
   <h3 align="center">Favourite Page</h3>
    ![Screenshot (290)](https://user-images.githubusercontent.com/96336670/232313392-41e98899-adb1-4975-b275-5103431771a1.png)
