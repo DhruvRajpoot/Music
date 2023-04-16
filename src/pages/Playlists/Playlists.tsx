@@ -12,8 +12,6 @@ import {
   PlaylistContainer,
   SubmitButton,
 } from "./Playlists.style";
-import { PlaylistRowList } from "../../Components/PlaylistRow/PlaylistRow.style";
-import PlaylistCard from "../../Components/PlaylistCard/PlaylistCard";
 import PlaylistRow from "../../Components/PlaylistRow/PlaylistRow";
 import Loader from "../../Components/Loader/Loader";
 import { MdPlaylistAdd } from "react-icons/md";

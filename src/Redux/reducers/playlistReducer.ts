@@ -5,7 +5,7 @@ export const playlistSlice= createSlice({
     initialState:{
         userPlaylist:[],
         featuredPlaylist:[],
-        recentPlaylist:[]
+        recommendedPlaylist:[]
     },
     reducers: {
         getUserPlaylist: (state, action) => {
@@ -14,11 +14,11 @@ export const playlistSlice= createSlice({
         getFeaturedPlaylist: (state, action) => {
             state.featuredPlaylist = action.payload
         },
-        getRecommededPlaylist: (state, action) => {
-            state.recentPlaylist = action.payload
+        getRecommendedPlaylist: (state, action) => {
+            state.recommendedPlaylist = action.payload
         },
     }
 })
 
-export const { getUserPlaylist, getFeaturedPlaylist, getRecommededPlaylist } = playlistSlice.actions;
+export const { getUserPlaylist, getFeaturedPlaylist, getRecommendedPlaylist } = playlistSlice.actions;
 export default playlistSlice.reducer;

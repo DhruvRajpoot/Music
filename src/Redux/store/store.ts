@@ -9,7 +9,5 @@ export default configureStore({
     playlist: playlistReducer,
     favourite: favouriteReducer,
   }
-  // ,
-  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 },
 );

@@ -18,7 +18,8 @@ export const Title = styled.h5`
 export const PlaylistRowList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem,12rem));
-  grid-gap: calc(.3rem + 1.7vw);
+  grid-row-gap: calc(.3rem + 1.7vw);
+  grid-column-gap: calc(.3rem + .5vw);
 
   @media (max-width: 450px) {
     grid-template-columns: repeat(auto-fit, minmax(7rem,.6fr));

@@ -12,6 +12,7 @@ import {
 import logo from "../../assets/images/logo.png";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import useAxios from "../../utils/useAxios";
+import defaultImg from "../../assets/images/defaultPlaylistImg.jpeg";
 
 const MusicRow = (props) => {
   const date = new Date(`${props.data.added_at}`);
@@ -60,7 +61,7 @@ const MusicRow = (props) => {
     <MusicContainer>
       <Column>{props.index + 1}</Column>
       <Column>
-        <Image src={data.album.images[0].url} alt="Music Image" />
+        <Image src={data.album.images.length!==0?data.album.images[0].url:defaultImg} alt="Music Image" />
         <TitleWrapper>
           <Title>{data.name}</Title>
           <Artist>{artist}</Artist>
