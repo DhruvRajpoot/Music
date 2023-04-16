@@ -21,6 +21,7 @@ const Main = () => {
       localStorage.setItem("token", _token);
       setToken(_token);
       window.location.hash = "";
+      window.location.href='/search'
     } else if (!token) {
       window.location.href = "/login";
     }

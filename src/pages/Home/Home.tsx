@@ -34,7 +34,6 @@ const Home = () => {
     (state: any) => state.playlist.featuredPlaylist
   );
   const [loading, setLoading] = useState(false);
-  const [token, setToken] = useState(localStorage.getItem("token") ? localStorage.getItem("token") : null);
 
   const getFeaturedPlaylistFunc = async () => {
     setLoading(true);
@@ -49,7 +48,7 @@ const Home = () => {
 
   useEffect(() => {
     getFeaturedPlaylistFunc();
-  }, [token]);
+  }, []);
 
   return (
     <>
