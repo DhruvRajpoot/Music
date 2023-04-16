@@ -44,8 +44,6 @@ const Home = () => {
   useEffect(() => {
     getFeaturedPlaylist();
     getRecentPlaylist();
-
-    console.log(user)
   }, []);
 
   return (

@@ -70,7 +70,8 @@ export const BottomWrapper = styled.div`
 
 export const MusicHeader = styled.div`
   display: grid;
-  grid-template-columns: 0.2fr 2.5fr 1fr 1fr 0.35fr 0.28fr;
+  grid-template-columns: 0.2fr 2.5fr 1.2fr 1fr 0.35fr 0.28fr;
+  grid-column-gap: 1rem;
   color: #ccc;
   padding: 0.5rem;
   border-bottom: 1px solid #505050;

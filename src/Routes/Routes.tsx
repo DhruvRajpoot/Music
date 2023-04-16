@@ -7,6 +7,7 @@ import Search from "../pages/Search/Search";
 import Login from "../pages/Login/Login";
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
+import MusicList from "../pages/MusicList/MusicList";
 
 const routes = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const routes = createBrowserRouter([
         path: "/search",
         element: <Search />,
       },
+      {
+        path: "/musiclist",
+        element:<MusicList/>
+      }
     ],
   },
   {

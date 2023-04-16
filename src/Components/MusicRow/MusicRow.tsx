@@ -28,8 +28,10 @@ const MusicRow = (props) => {
     try {
       const res = await api.get(`/me/tracks/contains?ids=${id}`);
       setLiked(res.data[0]);
-    } catch (err) {
-      console.log(err);
+    } catch (err:any) {
+      if (err.response.status !== 429) {
+        console.log(err);
+      }
     }
   };
 

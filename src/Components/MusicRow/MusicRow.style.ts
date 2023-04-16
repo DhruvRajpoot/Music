@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const MusicContainer = styled.div`
   display: grid;
-  grid-template-columns: 0.18fr 2.5fr 1fr 1fr 0.3fr 0.3fr;
+  grid-template-columns: 0.18fr 2.5fr 1.2fr 1fr 0.3fr 0.3fr;
+  grid-column-gap: 1rem;
   color: #ccc;
   padding: 0.5rem;
   margin: .5rem 0;

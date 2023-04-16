@@ -37,10 +37,12 @@ export const HoverElementIcon = styled.div`
   }
 `;
 
-export const PlaylistCardContainer = styled.a`
+export const PlaylistCardContainer = styled.button`
   display: flex;
   flex-direction: column;
   gap: calc(0.5rem + 0.3vw);
+  border: none;
+  outline: none;
   cursor: pointer;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
