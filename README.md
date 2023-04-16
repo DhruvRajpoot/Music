@@ -8,15 +8,15 @@
 <div> <h1 align="center">  Preview </h1>
   <b>Preview</b> this site on https://
   
-  Shipped and deployed using <p><img src"https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/></p>
+  Shipped and deployed using <img src"https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" width="10%"/>
 </div>
 
 <div class="tech_stack"> <h1 align="center"> 💻 Tech Stack 💻</h1>
   <div class="label" align="center" >
-    <img src"https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-    <img src"https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/>
-    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"/>
-    <img src"https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+    <img src"https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="10%"/>
+    <img src"https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" width="10%"/>
+    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" width="10%"/>
+    <img src"https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" width="10%"/>
   </div>
 </div>
 
