@@ -8,7 +8,7 @@
 <div> <h1 align="center">  Preview </h1>
   <b>Preview</b> this site on https://
   
-  Shipped and deployed using <img src"https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+  Shipped and deployed using <p><img src"https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/></p>
 </div>
 
 <div class="tech_stack"> <h1 align="center"> 💻 Tech Stack 💻</h1>
