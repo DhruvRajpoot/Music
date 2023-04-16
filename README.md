@@ -8,7 +8,16 @@
 <div> <h1 align="center">  Preview </h1>
   <b>Preview</b> this site on https://
   
-  Shipped and deployed using [Netlify](https://www.netlify.com/)
+  Shipped and deployed using <img src"https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
+</div>
+
+<div class="tech_stack"> <h1 align="center"> 💻 Tech Stack 💻</h1>
+  <div class="label" align="center" >
+    <img src"https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+    <img src"https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/>
+    <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"/>
+    <img src"https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+  </div>
 </div>
 
 
@@ -34,11 +43,6 @@
 
   </div>
   
-<div class="tech_stack"> <h1 align="center"> 💻 Our Tech Stack 💻</h1>
-  <div class="label" align="center" >
-  </div>
-</div>
-
 <div class="contribute"> <h1 align="center"> 📌 Contributing Guidelines  📌</h1> 
   
 **1.**  Fork [this]() repository.
