@@ -1,0 +1,73 @@
+<h1 align="center" > "MUSIC" </h1>
+<h2 align="center"> A spotify clone which allows user to search for their favourite music, create playlists, add music to their favourite section. </h2>
+
+> ⚠️ This only **one** of very **__initial release__** and hence there may be bugs, lags, errors.
+> Bug reports in Issues section will really helpful and it would be more great if you fix it and lend a helping hand by opening a pull request.
+
+<div> <h1 align="center">  Preview </h1>
+  <b>Preview</b> this site on https://
+  
+  Shipped and deployed using [Netlify](https://www.netlify.com/)
+</div>
+
+
+<div class="img" align="center" >
+  <h1 align="center">📺 Snapshots 📺</h1>
+  </div>
+<div class="tech_stack"> <h1 align="center"> 💻 Our Tech Stack 💻</h1>
+  <div class="label" align="center" >
+  </div>
+</div>
+
+<div class="contribute"> <h1 align="center"> 📌 Contributing Guidelines  📌</h1> 
+  
+**1.**  Fork [this]() repository.
+
+**2.**  Clone your forked copy of the project.
+```
+git clone --depth 1 https://github.com/<your_name>/Frontier.git
+```
+**3.** Navigate to the project directory :file_folder: .
+```
+cd Music
+```
+**4.** Add a reference(remote) to the original repository.
+```
+git remote add upstream https://github.com/
+```
+**5.** Check the remotes for this repository.
+```
+git remote -v
+```
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+```
+git pull upstream main
+```
+**7.** Create a new branch.
+```
+git checkout -b <your_branch_name>
+```
+**8.** Perfom your desired changes to the code base.
+
+
+**9.** Track your changes :heavy_check_mark: 
+```
+git add . 
+```
+**10.** Commit your changes .
+```
+git commit -m "Relevant message"
+```
+**11.** Push the committed changes in your feature branch to your remote repo.
+```
+git push -u origin <your_branch_name>
+```
+**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+
+**13.** Add appropriate title and description to your pull request explaining your changes and efforts done. Always make sure you have pulled the latest code from the master branch before making a PR.
+
+**14.** Click on `Create Pull Request`.
+  
+**15.** Wait for your PR to be reviewed by maintainers/creators
+
+</div>
